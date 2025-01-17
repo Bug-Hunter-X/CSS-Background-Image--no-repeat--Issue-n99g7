@@ -1,0 +1,26 @@
+/* solution.css */
+/* Solution 1: Verify Image Path (Ensure the path is correct) */
+.container {
+  background-image: url('image.png'); /* Correct path */
+  background-repeat: no-repeat;
+}
+
+/* Solution 2: Explicit Background Size */
+.container {
+  background-image: url('image.png');
+  background-repeat: no-repeat;
+  background-size: cover; /* Or contain */
+}
+
+/* Solution 3: Using a more specific selector. Adjust the selector to match your context */
+#mySpecificContainer {
+    background-image: url('image.png');
+    background-repeat: no-repeat;
+}
+
+/* Solution 4: Using background-size: 100% 100%; to cover the area */
+.container {
+    background-image: url('image.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+} 
